@@ -1,7 +1,6 @@
 import tkinter as tk
 
 calculation = ""
-
 def addToCalculation(symbol):
     global calculation
     calculation += str(symbol)
@@ -26,7 +25,8 @@ def clearField():
 
 root = tk.Tk()
 root.geometry("300x275")
-
+root.title("Calculator")
+root.resizable(False, False)
 textResult = tk.Text(root, width=17, height=2, font=("Arial", 24))
 textResult.grid(row=1, columnspan=5)
 
