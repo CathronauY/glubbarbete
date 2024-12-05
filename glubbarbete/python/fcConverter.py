@@ -11,7 +11,7 @@ def CToF():
 opt = input("Fahrenheit or Celsius: ")
 
 while(opt != "Fahrenheit" and opt != "Celsius"): 
-    opt = int(input("Invalid input, please try again: "))
+    opt = input("Invalid input, please try again: ")
 
 if(opt == "Fahrenheit"): FToC()
 else: CToF()
