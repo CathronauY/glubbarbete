@@ -1,9 +1,9 @@
-def FahrenheitToCelsius():
+def FahrenheitToCelsius() => int:
     fahrenheit = int(input("Input fahrenheit and ill convert it to celsius: "))
     celsius = (fahrenheit - 32) / 1.8
     return celsius:.2f
 
-def CelsiusToFahrenheit():
+def CelsiusToFahrenheit() => int:
     celsius = int(input("Input celsius and ill convert it to fahrenheit: "))
     fahrenheit = (celsius * 1.8) + 32
     return fahrenheit:.2f
