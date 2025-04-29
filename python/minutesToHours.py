@@ -1,22 +1,22 @@
-def mToH(): #minutes to hours
+def minutesToHours(): #minutes to hours
     minutes = input("Minutes: ")
     hours = minutes / 60
-    print(f"Hours: {hours:.0f}")
+    return hours
 
-def hToM(): #hours to minutes
+def hoursToMinutes(): #hours to minutes
     hours = int(input("Hours: "))
     minutes = hours * 60
-    print(f"Minutes: {minutes:.0f}")
+    return minutes
 
-def mToD(): #minutes to days
+def minutesToDay(): #minutes to days
     minutes = int(input("Minutes: "))
     days = (minutes / 60) / 24
-    print(f"Days: {days:.2f}")
+    return days
 
-def hToD(): #hours to days
+def hoursToDay(): #hours to days
     hours = int(input("Hours: "))
     days = hours / 24
-    print(f"Days: {days:.2f}")
+    return days
 
 invalid = "Invalid input, please try again: "
 ignore = False
@@ -27,7 +27,8 @@ while(True):
     while(opt != "Hours" and opt != "Minutes" and opt != "" and opt != "end"):
         opt = input(invalid)
 
-    if(opt == "end"): break
+    if(opt == "end"):
+        break
 
     if(opt == ""):
         ignore = True
@@ -36,10 +37,11 @@ while(True):
         while(opt != "Hours" and opt != "Minutes" and opt != "end"):
             opt = input(invalid)
 
-        if(opt == "end"): break
+        if(opt == "end"):
+            break
     
-        if(opt == "Hours"): hToD()
-        else: mToD()
+        if(opt == "Hours"): hoursToDay()
+        else: minutesToDday()
 
     if(opt == "Hours" and ignore == False): hToM()
     elif(opt == "Minutes" and ignore == False): mToH()
