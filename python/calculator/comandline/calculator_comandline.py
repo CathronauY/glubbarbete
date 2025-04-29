@@ -27,7 +27,7 @@ def calc_divide(num1: int, num2: int) -> int:
 
 def main() -> None:
   while running:
-    calculation_type: int = input("type (add/subtract/times/divide/EXIT): ")
+    calculation_type: int = input("type (add/subtract/times/divide/EXIT): ").lower()
     match calculation_type:
       case "add":
         calculation_type = 1
