@@ -59,6 +59,8 @@ def calc_divide(num1: int, num2: int) -> int:
 def main() -> None:
   """The main function
   """
+  running = True
+  
   while running:
     calculation_type: int = input("type (add/subtract/times/divide/EXIT): ").lower()
     match calculation_type:
