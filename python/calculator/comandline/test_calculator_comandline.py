@@ -1,5 +1,5 @@
 import unittest                                       # importing unittest to test my software
-import calculator_comandline as calc                  # Importing the python file to test
+import calculator_commandline as calc                  # Importing the python file to test
 
 class AddTests(unittest.TestCase):                    # The class to test the add function
     def test_two_plus_one_is_tree(self):              # A function to test if the add function can add two and one
