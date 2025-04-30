@@ -1,26 +1,38 @@
 def calc_add(num1: int, num2: int) -> int:
-  """
-  num1: int
-  num2: int
-  return: num1 + num2
+  """The add function
+
+  Args:
+      num1 (int): The first number
+      num2 (int): The second number
+
+  Returns:
+      answer (int): num2 + num2
   """
   answer = num1 + num2
   return answer
 
 def calc_subtract(num1: int, num2: int) -> int:
-  """
-  num1: int
-  num2: int
-  return: num1 - num2
+  """The subtract function
+
+  Args:
+      num1 (int): The first number
+      num2 (int): The second number
+
+  Returns:
+      answer (int): num1 - num2
   """
   answer = num1 - num2
   return answer
 
 def calc_times(num1: int, num2: int) -> int:
-  """
-  num1: int
-  num2: int
-  return: num1 * num2
+  """The times function
+
+  Args:
+      num1 (int): The first number
+      num2 (int): The second number
+
+  Returns:
+      answer (int): num1 * num2
   """
   if num1 == 0 or num2 == 0:
     answer = 0
@@ -29,10 +41,14 @@ def calc_times(num1: int, num2: int) -> int:
   return answer
 
 def calc_divide(num1: int, num2: int) -> int:
-  """
-  num1: int
-  num2: int
-  return: num1 / num2
+  """The divide function
+
+  Args:
+      num1 (int): The first number
+      num2 (int): The second number
+
+  Returns:
+      answer (int): num1 / num2
   """
   if num1 == 0 or num2 == 0:
     answer = 0
@@ -41,6 +57,8 @@ def calc_divide(num1: int, num2: int) -> int:
   return answer
 
 def main() -> None:
+  """The main function
+  """
   while running:
     calculation_type: int = input("type (add/subtract/times/divide/EXIT): ").lower()
     match calculation_type:
