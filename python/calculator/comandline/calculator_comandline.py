@@ -8,8 +8,7 @@ def calc_add(num1: int, num2: int) -> int:
   Returns:
       answer (int): num2 + num2
   """
-  answer = num1 + num2
-  return answer
+  return num1 + num2
 
 def calc_subtract(num1: int, num2: int) -> int:
   """The subtract function
@@ -19,10 +18,9 @@ def calc_subtract(num1: int, num2: int) -> int:
       num2 (int): The second number
 
   Returns:
-      answer (int): num1 - num2
+      int: num1 - num2
   """
-  answer = num1 - num2
-  return answer
+  return num1 - num2
 
 def calc_times(num1: int, num2: int) -> int:
   """The times function
@@ -32,13 +30,9 @@ def calc_times(num1: int, num2: int) -> int:
       num2 (int): The second number
 
   Returns:
-      answer (int): num1 * num2
+      int: num1 * num2
   """
-  if num1 == 0 or num2 == 0:
-    answer = 0
-  else:
-    answer = num1 * num2
-  return answer
+  return 0 if num1 == 0 or num2 == 0 else num1 * num2
 
 def calc_divide(num1: int, num2: int) -> int:
   """The divide function
@@ -50,11 +44,7 @@ def calc_divide(num1: int, num2: int) -> int:
   Returns:
       answer (int): num1 / num2
   """
-  if num1 == 0 or num2 == 0:
-    answer = 0
-  else:
-    answer = num1 / num2
-  return answer
+  return 0 if num1 == 0 or num2 == 0 else num1 / num2
 
 def main() -> None:
   """The main function
