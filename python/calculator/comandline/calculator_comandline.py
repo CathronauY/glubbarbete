@@ -1,14 +1,29 @@
 import math
 
 def calc_add(num1: int, num2: int) -> int:
+  """
+  num1: int
+  num2: int
+  return: num1 + num2
+  """
   answer = num1 + num2
   return answer
 
 def calc_subtract(num1: int, num2: int) -> int:
+  """
+  num1: int
+  num2: int
+  return: num1 - num2
+  """
   answer = num1 - num2
   return answer
 
 def calc_times(num1: int, num2: int) -> int:
+  """
+  num1: int
+  num2: int
+  return: num1 * num2
+  """
   if num1 == 0 or num2 == 0:
     answer = 0
   else:
@@ -16,6 +31,11 @@ def calc_times(num1: int, num2: int) -> int:
   return answer
 
 def calc_divide(num1: int, num2: int) -> int:
+  """
+  num1: int
+  num2: int
+  return: num1 / num2
+  """
   if num1 == 0 or num2 == 0:
     answer = 0
   else:
