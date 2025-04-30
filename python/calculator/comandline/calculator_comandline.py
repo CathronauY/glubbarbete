@@ -76,20 +76,20 @@ def main() -> None:
         exit
 
     if calculation_type == 1:
-      num1: int = int(input("nummer 1: "))
-      num2: int = int(input("nummer 2: "))
+      num1: int = int(input("number 1: "))
+      num2: int = int(input("number 2: "))
       print(calc_add(num1, num2))
     elif calculation_type == 2:
-      num1: int = int(input("nummer 1: "))
-      num2: int = int(input("nummer 2: "))
+      num1: int = int(input("number 1: "))
+      num2: int = int(input("number 2: "))
       print(calc_subtract(num1, num2))
     elif calculation_type == 3:
-      num1: int = int(input("nummer 1: "))
-      num2: int = int(input("nummer 2: "))
+      num1: int = int(input("number 1: "))
+      num2: int = int(input("number 2: "))
       print(calc_times(num1, num2))
     elif calculation_type == 4:
-      num1: int = int(input("nummer 1: "))
-      num2: int = int(input("nummer 2: "))
+      num1: int = int(input("number 1: "))
+      num2: int = int(input("number 2: "))
       print(calc_divide(num1, num2))
 
 if __name__ == "__main__":
